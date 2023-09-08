@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.io.*;
 import java.util.*;
 public class Lab1 {
@@ -34,7 +36,7 @@ public class Lab1 {
 
 
         try {
-            FileWriter writer = new FileWriter("matrix.txt");
+            FileWriter writer = new FileWriter("Lab1/matrix.txt");
             PrintWriter printWriter = new PrintWriter(writer);
 
             for (int i = 0; i < n; i++) {
