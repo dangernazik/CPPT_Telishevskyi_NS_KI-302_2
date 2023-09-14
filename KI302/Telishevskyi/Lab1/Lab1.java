@@ -1,8 +1,8 @@
-package Lab1;
+package KI302.Telishevskyi.Lab1;
 
 import java.io.*;
 import java.util.*;
-public class Lab1Telishevskiy302 {
+public class Lab1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class Lab1Telishevskiy302 {
 
 
         try {
-            FileWriter writer = new FileWriter("Lab1/matrix.txt");
+            FileWriter writer = new FileWriter("302/Telishevskyi/KI302.Telishevskyi.Lab1/matrix.txt");
             PrintWriter printWriter = new PrintWriter(writer);
 
             for (int i = 0; i < n; i++) {
