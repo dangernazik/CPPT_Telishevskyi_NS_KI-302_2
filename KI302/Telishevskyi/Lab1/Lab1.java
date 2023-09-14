@@ -36,7 +36,7 @@ public class Lab1 {
 
 
         try {
-            FileWriter writer = new FileWriter("Lab1/matrix.txt");
+            FileWriter writer = new FileWriter("KI302.Telishevskyi.Lab1/matrix.txt");
             PrintWriter printWriter = new PrintWriter(writer);
 
             for (int i = 0; i < n; i++) {
