@@ -1,4 +1,4 @@
-package Lab1;
+package KI302.Telishevskyi.Lab1;
 
 import java.io.*;
 import java.util.*;
