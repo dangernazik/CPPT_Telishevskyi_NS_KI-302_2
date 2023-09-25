@@ -7,10 +7,8 @@ public class Lab1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         System.out.print("Введіть розмір квадратної матриці: ");
         int n = scanner.nextInt();
-
 
         String filler;
         do {
@@ -22,11 +20,11 @@ public class Lab1 {
         } while (filler.length() != 1);
         char fillerChar = filler.charAt(0);
 
-
         char[][] matrix = new char[n][n];
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (i >= j && i + j >= n - 1) {
+                if (i >= j && i + j >= n - 1 || i <= j && i + j <= n - 1) {
                     matrix[i][j] = fillerChar;
                 } else {
                     matrix[i][j] = ' ';
@@ -34,9 +32,8 @@ public class Lab1 {
             }
         }
 
-
         try {
-            FileWriter writer = new FileWriter("KI302.Telishevskyi.Lab1/matrix.txt");
+            FileWriter writer = new FileWriter("matrix.txt");
             PrintWriter printWriter = new PrintWriter(writer);
 
             for (int i = 0; i < n; i++) {
